@@ -10,27 +10,26 @@ Violations:
 
 import random
 
-
 class NumberGuessingGameBad:
-    """Poorly structured number guessing game violating best practices."""
+    """Terribly structured guessing game that makes life difficult."""
 
     def __init__(self):
-        self.target = random.randint(1, 100)
-        self.run_game()  # Violates Single Responsibility by mixing logic in init
+        self.magic_number_of_eternal_suffering = random.randint(1, 10000)
+        self.guess_the_number_or_perish()
 
-    def run_game(self):
-        """Violates Separation of Concerns by handling everything in one function."""
+    def guess_the_number_or_perish(self):
+        """Mashes everything together in a confusing mess."""
         while True:
-            guess = input("Enter your guess: ")
+            user_proclamation_of_doom = input("Take a wild guess at the number, you have to lock in for this one: ")
             try:
-                guess = int(guess)
+                user_proclamation_of_doom = int(user_proclamation_of_doom)
             except:
-                print("That's not a number!")
+                print("Bro that isn't even a number, are you even trying? ( ͡° ͜ʖ ͡° ) ")
                 continue
-            if guess < self.target:
-                print("Too low!")
-            elif guess > self.target:
-                print("Too high!")
+            if user_proclamation_of_doom < self.magic_number_of_eternal_suffering:
+                print("THAT'S TO LOW, GUESS AGAIN! ᕙ(⇀‸↼‶)ᕗ ")
+            elif user_proclamation_of_doom > self.magic_number_of_eternal_suffering:
+                print("Too high! You better start guessing LOWER! Ⴚტ⊙▂⊙ტჂ ")
             else:
-                print("You got it!")
+                print("You have somehow stumbled upon the correct number. Unbelievable, are you hacking? (ノಠ益ಠ)ノ彡┻━┻ ")
                 break
