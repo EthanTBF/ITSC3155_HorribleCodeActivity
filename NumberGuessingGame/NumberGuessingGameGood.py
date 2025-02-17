@@ -1,7 +1,18 @@
+"""
+Number Guessing Game: Good Coding Practices
+
+Best Practices Demonstrated:
+1. KISS (Keep It Simple, Stupid) - Avoids unnecessary complexity.
+2. DRY (Don't Repeat Yourself) - Reduces redundancy.
+3. Single Responsibility - Functions handle distinct tasks.
+4. Separation of Concerns - Input handling, logic, and output are properly separated.
+"""
+
 import random
 
-class NumberGuessingGame:
-    """Class-based implementation of a number guessing game."""
+
+class NumberGuessingGameGood:
+    """Class-based implementation of a number guessing game following best practices."""
 
     def __init__(self, lower=1, upper=100):
         self.lower = lower
